@@ -1,0 +1,150 @@
+/* Form Style */
+body {
+  background-color: #f8f9fa;
+}
+.hero.is-primary {
+  background: blue;
+}
+.hero-body {
+  background: #025a4eff;
+  /* text-align: center; */
+}
+.input,
+.textarea,
+.select select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+.input:focus,
+.textarea:focus,
+.select select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+.button.is-primary {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+}
+.button.is-primary:hover {
+  background-color: #357ab7;
+  border-color: #357ab7;
+}
+.button.is-danger {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.button.is-danger:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+.message {
+  font-size: 1rem;
+  font-weight: 600;
+}
+#servicesNameSelect {
+  width: 100%;
+}
+.field {
+  margin-bottom: 0.5rem;
+}
+.control span {
+  color: #4a90e2;
+}
+#emailError {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.is-grouped .control {
+  margin-right: 1rem;
+}
+/* Blur effect for background */
+body.modal-active {
+  filter: blur(5px);
+  overflow: hidden; /* Prevent scrolling while the modal is active */
+}
+/* Background blur effect */
+.blur {
+  filter: blur(5px);
+  pointer-events: none; /* Prevent interaction with the blurred background */
+}
+
+/* Modal styles */
+#successModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+}
+
+#successModal img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#successModal button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#successModal button:hover {
+  background-color: #0056b3;
+}
+
+/* Backdrop overlay */
+#modalBackdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Remark Part appereance */
+.equal-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between fields */
+  align-items: start; /* Align fields at the top */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* Limit the maximum width */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 0; /* Space between input and image */
+}
+.title.is-4 {
+  background-color: #3d857cff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.columns {
+  margin-bottom: 0.25rem;
+}
+
+hr {
+  border: 0;
+  height: 1.3px;
+  background: #e0e0e0;
+  margin: 10px 0;
+}
