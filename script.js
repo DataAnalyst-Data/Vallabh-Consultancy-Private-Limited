@@ -229,7 +229,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
 
     // Send the payload to the server
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwY44te_6ai9iWKA1EIjuj8braXbDnP599OU_CM1jvapUI1T3YfloJol0naPsowAsN6KQ/exec",
+      "https://script.google.com/macros/s/AKfycbwBIraaCcKmo5O-hKJEUtQYR63jy1eZ8FsaOUg7VEXp5kdBDoQ230hGeYDAJTz6-1Telw/exec",
       {
         method: "POST",
         body: JSON.stringify(payload),
@@ -302,4 +302,5 @@ function clearForm() {
     "div:not(:first-child)"
   );
   mobileFields.forEach((field) => field.remove());
+
 }
